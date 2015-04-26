@@ -1,0 +1,32 @@
+.menu {
+  padding: 20px;
+  background: #000;
+}
+.menu__element {
+  float: right;
+  color: #fff;
+  padding: 0 10px;
+}
+.body {
+  padding: 50px;
+  background: #00f;
+}
+.body__element {
+  float: center;
+  font-size: 36px;
+  color: #fff;
+}
+.button {
+  display: inline-block;
+  padding: 5px 7px;
+  background: #23b7a4;
+  color: #fff;
+}
+.wrapper {
+  width: 100%;
+}
+.world {
+  display: inline-block;
+  color: #fff;
+  padding: 5px 7px;
+}
