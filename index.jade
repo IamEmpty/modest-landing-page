@@ -3,28 +3,32 @@ html
   head
     meta(charset= 'utf-8')
     link(rel= "stylesheet", type= "text/css", href= "css/main.css")
-
+    link(href= 'http://fonts.googleapis.com/css?family=Quattrocento+Sans:700', rel= 'stylesheet', type= 'text/css')
+    link(href= 'http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel= 'stylesheet' type= 'text/css' )
   body
-    .menu
-      a.menu__element(href= "#") CONTACT
-      a.menu__element(href= "#") FEATURES
-      a.menu__element(href= "#") WORK
-      a.menu__element(href= "#") SERVICES
-      a.menu__element(href= "#") TEAM
-      a.menu__element(href= "#") ABOUT
-      a.menu__element(href= "#") HOME
-
+    .top-line
+      .container
+        img.logotype(src= '../img/modest.png')
+        .menu
+          a.menu__element(href= "#") CONTACT
+          a.menu__element(href= "#") FEATURES
+          a.menu__element(href= "#") WORK
+          a.menu__element(href= "#") SERVICES
+          a.menu__element(href= "#") TEAM
+          a.menu__element(href= "#") ABOUT
+          a.menu__element.menu__element_active(href= "#") HOME
     .wrapper
-      .body
-        .body__element.
-          WELCOME TO OUR MARKETPLACE
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor
-          non, ornare sagittis dolor. Nulla vestibulu lacus ...
+      .header
+        .container
+          .header__element.
+            WELCOME TO OUR MARKETPLACE
+          .header__text.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor
+            non, ornare sagittis dolor. Nulla vestibulu lacus ...
 
-        a.button(href= "#") VIEW MORE
-        a.world(href= "#") VIDEO TOUR
 
-
+          button.button.button_active(href= "#") VIEW MORE
+          button.button(href= "#") VIDEO TOUR
 
   div.
     we are modest.

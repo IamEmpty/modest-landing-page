@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/global-citizen/modest-landing-page",
   "devDependencies": {
-    "gulp": "^3.8.11",
+    "gulp": "*",
     "gulp-jade": "^1.0.0",
     "gulp-stylus": "^2.0.1",
     "jade": "^1.9.2",
