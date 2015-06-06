@@ -60,3 +60,37 @@
 .wrapper {
   width: 100%;
 }
+.main_heading {
+  font-family: 'Quattrocento Sans', sans-serif;
+  text-transform: uppercase;
+  color: #292f36;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: left;
+}
+.number-list {
+  overflow: hidden;
+}
+.number-list__number {
+  background: #23b7a4;
+  text-align: left;
+  color: #fff;
+  font-size: 20px;
+  padding: 16px 17px;
+  float: left;
+}
+.grid-1 {
+  width: 50%;
+  float: left;
+  min-height: 1px;
+}
+.grid-2 {
+  width: 50%;
+  float: left;
+}
+.number-posetion-2 {
+  margin: 95px 803px 0 0;
+}
+.number-posetion-3 {
+  margin: 98px 803px 0 0;
+}
