@@ -5,8 +5,7 @@ var gulp = require('gulp'),
 
 
 gulp.task('html', function() {
-
-  gulp.src('./*.jade')
+  return gulp.src('./*.jade')
     .pipe(plumber())
     .pipe(jade({
       pretty: true
@@ -15,7 +14,7 @@ gulp.task('html', function() {
 });
 
 gulp.task('css', function () {
-  gulp.src('./stylesheets/main.styl')
+  return gulp.src('./stylesheets/main.styl')
     .pipe(plumber())
     .pipe(stylus())
     .pipe(gulp.dest('./build/css/'));
