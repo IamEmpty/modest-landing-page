@@ -172,15 +172,67 @@ font-family
 }
 .staff-photo__name {
   background: #e1e6ea;
+  color: #292f36;
 }
 .staff-photo__post {
   background: #e1e6ea;
+  color: #8d8f92;
 }
-.test-square {
-  width: 50px;
-  height: 50px;
-  background: #00f;
+.photo-block__element {
+  float: left;
+  width: 33%;
 }
-.test-square:hover {
-  background: #f00;
+.portfolio-img {
+  position: relative;
+}
+.portfolio-img:hover .portfolio-img__title {
+  display: block;
+}
+.portfolio-img__photo:hover {
+  opacity: 0.6;
+}
+.portfolio-img__photo:hover .portfolio-img__title {
+  display: block;
+}
+.portfolio-img__title {
+  width: 360px;
+  height: 60px;
+  text-align: center;
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #292f36;
+  padding: 20px 0 0 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+.services-block__element {
+  width: 25%;
+  float: left;
+  position: relative;
+}
+.paragraf2 {
+  color: #292f36;
+  text-align: center;
+}
+.paragraf3 {
+  color: #8d8f92;
+  text-align: center;
+}
+.portfolio-img__photo:hover {
+  opacity: 0.6;
+}
+.portfolio-img__photo:hover .portfolio-img__title {
+  display: block;
+}
+.container1 {
+  background: #fff;
+}
+html,
+body,
+#map-canvas {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
 }
