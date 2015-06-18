@@ -173,6 +173,7 @@ font-family
 .staff-photo__name {
   background: #e1e6ea;
   color: #292f36;
+  text-transform: uppercase;
 }
 .staff-photo__post {
   background: #e1e6ea;
@@ -229,10 +230,90 @@ font-family
 .container1 {
   background: #fff;
 }
+.map-wrapper {
+  height: 346px;
+  overflow: hidden;
+}
 html,
 body,
 #map-canvas {
   height: 100%;
   margin: 0px;
   padding: 0px;
+  width: 100%;
+}
+.button-show {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  background: transparent;
+}
+.contact-form {
+  background: #fff;
+  width: 555px;
+  padding: 0 30px;
+  overflow: hidden;
+  position: relative;
+  top: -100px;
+}
+.name {
+  background: #eaeef1;
+  width: 100%;
+  margin: 7px 0 10px 0;
+  line-height: 44px;
+}
+.email {
+  background: #eaeef1;
+  width: 100%;
+  margin: 7px 0 10px 0;
+  line-height: 44px;
+}
+.message {
+  height: 159px;
+  background: #eaeef1;
+  width: 100%;
+}
+.txt1 {
+  color: #8d8f92;
+  text-align: left;
+}
+.txt2 {
+  color: #8d8f92;
+  text-align: left;
+}
+.txt3 {
+  color: #8d8f92;
+  text-align: left;
+}
+.row {
+  margin: 0 8px;
+  overflow: hidden;
+}
+.col-1 {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 8px;
+  min-height: 1px;
+  float: left;
+  position: relative;
+}
+.col-2 {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  min-height: 1px;
+  position: relative;
+  float: left;
+}
+.send-message {
+  border-radius: 3px;
+  background-color: #23b7a4;
+  width: 147px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  margin: 32px 0 0 0;
+}
+.txt4 {
+  color: #fff;
 }

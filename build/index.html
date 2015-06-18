@@ -10,18 +10,17 @@
       var map;
       function initialize() {
         map = new google.maps.Map(document.getElementById('map-canvas'), {
-          zoom: 8,
-          center: {lat: -34.397, lng: 150.644}
+          zoom: 10,
+          center: {lat: 72.570130, lng: -22.985267}
         });
       }
       google.maps.event.addDomListener(window, 'load', initialize);
-      
     </script>
   </head>
   <body>
     <div class="top-line">
       <div class="container"><img src="../img/modest.png" class="logotype">
-        <div class="menu"><a href="#" class="menu__element">CONTACT</a><a href="#" class="menu__element">WORK</a><a href="#" class="menu__element">SERVICES</a><a href="#" class="menu__element">TEAM</a><a href="#" class="menu__element">ABOUT</a><a href="#" class="menu__element menu__element_active">HOME
+        <div class="menu"><a href="#" class="menu__element">contact</a><a href="#" class="menu__element">work</a><a href="#" class="menu__element">services</a><a href="#" class="menu__element">TEAM</a><a href="#" class="menu__element">ABOUT</a><a href="#" class="menu__element menu__element_active">HOME
             <div class="wrapper"></div></a></div>
       </div>
       <div class="header">
@@ -74,26 +73,26 @@
       <div class="staff-gallery">
         <div class="staff-gallery__element staff-photo"><img src="../img/foto1.png" class="staff-photo__img">
           <div class="photo-social-buttons">facebook</div>
-          <p class="staff-photo__name">GLORIA BROMLEY</p>
+          <p class="staff-photo__name">gloria bromley</p>
           <p class="staff-photo__post">CEO and Founder</p>
         </div>
         <div class="staff-gallery__element staff-photo"><img src="../img/foto2.png" class="staff-photo__img">
-          <p class="staff-photo__name">PAUL TORRES</p>
+          <p class="staff-photo__name">paul torres</p>
           <p class="staff-photo__post">Head of Development</p>
         </div>
         <div class="staff-gallery__element staff-photo"><img src="../img/foto3.png" class="staff-photo__img">
-          <p class="staff-photo__name">JUDITH GILLETTE</p>
+          <p class="staff-photo__name">judith gillette</p>
           <p class="staff-photo__post">Graphic Desinger</p>
         </div>
         <div class="staff-gallery__element staff-photo"><img src="../img/foto4.png" class="staff-photo__img">
-          <p class="staff-photo__name">DELORIS REED</p>
+          <p class="staff-photo__name">deloris reed</p>
           <p class="staff-photo__post">Client Service Director</p>
         </div>
       </div>
     </div>
     <div class="wrapper">
       <div class="container"><img src="../img/border-left4.png" class="border1">
-        <h1 class="main_heading1">LOWELY WORK</h1>
+        <h1 class="main_heading1">lowely work</h1>
         <div class="photos-block">
           <div class="photo-block__element portfolio-img"><img src="../img/photo-1.png" class="portfolio-img__photo">
             <div class="portfolio-img__title">PARTNERSHIP GUIDLINES</div>
@@ -112,6 +111,7 @@
           </div>
           <div class="photo-block__element portfolio-img"><img src="../img/photo-6.png" class="portfolio-img__photo">
             <div class="portfolio-img__title">PARTNERSHIP GUIDLINES</div>
+            <button class="button-show">SHOW ME MORE</button>
           </div>
         </div>
       </div>
@@ -155,11 +155,42 @@
       </div>
       <div class="container1"><img src="../img/border-left.png" class="border1">
         <h1 class="main_heading2">STAY IN TOUCH</h1>
-        <div id="map-canvas"></div>
+        <div class="map-wrapper">
+          <div id="map-canvas"></div>
+        </div>
       </div>
-      <div class="container">
-        <h1 class="main_heading1">CONTACT INFORMATION</h1>
-        <P class="paragraf1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique nec dolor non, ornare sagittis dolor. Nulla vestibulum lacus sed molestie gravida. Cras fermentum elit quis magna congue, vel sodales arcu vestibulum. Nunc lobortis dui magna, quis dapibus lacus</P>
+    </div>
+    <div class="container">
+      <h1 class="main_heading1">CONTACT INFORMATION</h1>
+      <p class="paragraf1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique nec dolor non, ornare sagittis dolor. Nulla vestibulum lacus sed molestie gravida. Cras fermentum elit quis magna congue, vel sodales arcu vestibulum. Nunc lobortis dui magna, quis dapibus lacus</p>
+      <div class="container1">
+        <div class="contact-form">
+          <div class="row">
+            <div class="col-1">
+              <div class="contact-form__input">
+                <p class="txt1">your name</p>
+                <input type="text" class="name">
+              </div>
+            </div>
+            <div class="col-1">
+              <div class="contact-form__input">
+                <p class="txt2">yor email</p>
+                <input type="text" class="email">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-2">
+              <div class="contact-form__textarea">
+                <p class="txt3">your message</p>
+                <textarea class="message"></textarea>
+              </div>
+              <button class="send-message">
+                <p class="txt4">SEND MESSAGE</p>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>

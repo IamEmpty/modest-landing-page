@@ -10,20 +10,19 @@ html
       var map;
       function initialize() {
         map = new google.maps.Map(document.getElementById('map-canvas'), {
-          zoom: 8,
-          center: {lat: -34.397, lng: 150.644}
+          zoom: 10,
+          center: {lat: 72.570130, lng: -22.985267}
         });
       }
       google.maps.event.addDomListener(window, 'load', initialize);
-
   body
     .top-line
       .container
         img.logotype(src= '../img/modest.png')
         .menu
-          a.menu__element(href= "#") CONTACT
-          a.menu__element(href= "#") WORK
-          a.menu__element(href= "#") SERVICES
+          a.menu__element(href= "#") contact
+          a.menu__element(href= "#") work
+          a.menu__element(href= "#") services
           a.menu__element(href= "#") TEAM
           a.menu__element(href= "#") ABOUT
           a.menu__element.menu__element_active(href= "#") HOME
@@ -77,25 +76,25 @@ html
         .staff-gallery__element.staff-photo
           img.staff-photo__img(src= '../img/foto1.png')
           .photo-social-buttons facebook
-          p.staff-photo__name GLORIA BROMLEY
+          p.staff-photo__name gloria bromley
           p.staff-photo__post CEO and Founder
         .staff-gallery__element.staff-photo
           img.staff-photo__img(src= '../img/foto2.png')
-          p.staff-photo__name PAUL TORRES
+          p.staff-photo__name paul torres
           p.staff-photo__post Head of Development
         .staff-gallery__element.staff-photo
           img.staff-photo__img(src= '../img/foto3.png')
-          p.staff-photo__name JUDITH GILLETTE
+          p.staff-photo__name judith gillette
           p.staff-photo__post Graphic Desinger
         .staff-gallery__element.staff-photo
           img.staff-photo__img(src= '../img/foto4.png')
-          p.staff-photo__name DELORIS REED
+          p.staff-photo__name deloris reed
           p.staff-photo__post Client Service Director
 
     .wrapper
       .container
         img.border1(src= '../img/border-left4.png')
-        h1.main_heading1 LOWELY WORK
+        h1.main_heading1 lowely work
         .photos-block
           .photo-block__element.portfolio-img
             img.portfolio-img__photo(src= '../img/photo-1.png')
@@ -115,6 +114,7 @@ html
           .photo-block__element.portfolio-img
             img.portfolio-img__photo(src= '../img/photo-6.png')
             .portfolio-img__title PARTNERSHIP GUIDLINES
+            button.button-show SHOW ME MORE
 
     .container
       img.border1(src= '../img/border_left.png')
@@ -153,15 +153,32 @@ html
           img.pic3(src= '../img/pic3.png')
           p.paragraf A Showcase of Creative
           p.paragraf1 It’s always interesting to see another designer’s take on a famous website, app or even physical product. Different designers add their own personality and style.
-
       .container1
         img.border1(src= '../img/border-left.png')
         h1.main_heading2 STAY IN TOUCH
+        .map-wrapper
+          #map-canvas
 
-        #map-canvas
-
-      .container
-        h1.main_heading1 CONTACT INFORMATION
-        P.paragraf1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique nec dolor non, ornare sagittis dolor. Nulla vestibulum lacus sed molestie gravida. Cras fermentum elit quis magna congue, vel sodales arcu vestibulum. Nunc lobortis dui magna, quis dapibus lacus
+    .container
+      h1.main_heading1 CONTACT INFORMATION
+      p.paragraf1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique nec dolor non, ornare sagittis dolor. Nulla vestibulum lacus sed molestie gravida. Cras fermentum elit quis magna congue, vel sodales arcu vestibulum. Nunc lobortis dui magna, quis dapibus lacus
 
 
+      .container1
+        .contact-form
+          .row
+            .col-1
+              .contact-form__input
+                p.txt1 your name
+                input.name(type='text')
+            .col-1
+              .contact-form__input
+                p.txt2 yor email
+                input.email(type='text')
+          .row
+            .col-2
+              .contact-form__textarea
+                p.txt3 your message
+                textarea.message
+              button.send-message
+                   p.txt4 SEND MESSAGE
