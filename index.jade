@@ -40,8 +40,7 @@ html
           button.button.button_active(href= "#") VIEW MORE
           button.button(href= "#") VIDEO TOUR
     .container
-      img.border(src= '../img/border_left.png')
-      h1.main_heading we are modest.
+      h1.main-heading we are modest.
       .grid-1
         p.text-default Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor non, ornare sagittis dolor. Nulla vestibulu lacus sed molestie gravida. Crferm entum quismagna congue, vel sodales arcu vestibulum. Nunc lobortis dui magna, quis lacusullamcorper at.
         p.text-default Phasellus sollicitudin ante eros ornare, sit amet luctus lorem semper. Suspendisse posuere, quamdictum consectetur, augue metus pharetra tellus, eu feugiatloreg egetnisi. Cras ornare bibendum ante, ut bibendum odio convallis eget. vel sodales arcu vestibulum
@@ -58,24 +57,33 @@ html
             img(src= '../img/icon-behance.png')
       .grid-2
         .number-list
-          .number-list__number 01
-          .number-list__heading Dedication to the customers
-          .number-list__text Integer vel lacus non dui ullamcorper venenatis. Aliquam vitae tristique nisi, vitae ullamcorper risus. Nam porttitor blandit ultricies.
-        .number-list
-          .number-list__number 02
-          .number-list__heading working closely with our clients
-          .number-list__text Sed blandit nisi urna, sed pellentesque enim consectetur vitae. Suspendisse ut vehicula nibh.
-        .number-list
-          .number-list__number 03
-          .number-list__heading increase happiness
-          .number-list__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend laoreet euismod.
+          .number-list__item.number-list-item
+            .number-list-item__number 01
+            .number-list-item__heading Dedication to the customers
+            .number-list-item__text Integer vel lacus non dui ullamcorper venenatis. Aliquam vitae tristique nisi, vitae ullamcorper risus. Nam porttitor blandit ultricies.
+          .number-list__item
+            .number-list-item__number 02
+            .number-list-item__heading working closely with our clients
+            .number-list-item__text Sed blandit nisi urna, sed pellentesque enim consectetur vitae. Suspendisse ut vehicula nibh.
+          .number-list__item
+            .number-list-item__number 03
+            .number-list-item__heading increase happiness
+            .number-list-item__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend laoreet euismod.
     .container
       img.border1(src= '../img/border2.png')
+      //- TODO
       h1.main_heading2 MEET THE TEAM.
       .staff-gallery
         .staff-gallery__element.staff-photo
           img.staff-photo__img(src= '../img/foto1.png')
-          .photo-social-buttons facebook
+          //- TODO
+          .social-buttons-gr
+            button.social-buttons-gr__tw
+              img.button-tw(src= '../img/tw.png')
+            button.social-buttons-gr__f
+              img.button-tw(src= '../img/f.png')
+            button.social-buttons-gr__i
+              img.button-tw(src= '../img/i.png')
           p.staff-photo__name gloria bromley
           p.staff-photo__post CEO and Founder
         .staff-gallery__element.staff-photo
@@ -120,9 +128,12 @@ html
       img.border1(src= '../img/border_left.png')
       h1.main_heading WHAT WE DO.
       .services-block
-        .services-block__element
+        .services-block__element.services-block-element
+          //- TODO
           img.icon1(src= '../img/cogs.png')
+          //- TODO
           p.paragraf2 Easy theme Setup
+          //- TODO
           p.paragraf3 Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.
         .services-block__element
           img.icon1(src= '../img/pencil.png')
@@ -142,8 +153,11 @@ html
         img.border1(src= '../img/border-left.png')
         h1.main_heading1 FEATURES
         .pic-block
+          //- TODO
           img.pic1(src= '../img/pic1.png')
+          //- TODO
           p.paragraf Product Design: Eames Chairs
+          //- TODO
           p.paragraf1 Eames designs are certainly iconic. Everyone of us know at least two or three of their famous chairs. I would even risk saying that most of us dream about having a nice Eames.
         .pic-block
           img.pic2(src= '../img/pic2.png')
@@ -160,16 +174,16 @@ html
           #map-canvas
 
     .container
-      h1.main_heading1 CONTACT INFORMATION
-      p.paragraf1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique nec dolor non, ornare sagittis dolor. Nulla vestibulum lacus sed molestie gravida. Cras fermentum elit quis magna congue, vel sodales arcu vestibulum. Nunc lobortis dui magna, quis dapibus lacus
+      h1.main_heading CONTACT INFORMATION
+      p.paragraf2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique nec dolor non, ornare sagittis dolor. Nulla vestibulum lacus sed molestie gravida. Cras fermentum elit quis magna congue, vel sodales arcu vestibulum. Nunc lobortis dui magna, quis dapibus lacus
 
-
-      .container1
         .contact-form
           .row
             .col-1
               .contact-form__input
+                //- TODO
                 p.txt1 your name
+                //- TODO
                 input.name(type='text')
             .col-1
               .contact-form__input
@@ -178,6 +192,7 @@ html
           .row
             .col-2
               .contact-form__textarea
+                //- TODO
                 p.txt3 your message
                 textarea.message
               button.send-message

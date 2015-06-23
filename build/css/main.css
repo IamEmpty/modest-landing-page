@@ -61,7 +61,7 @@
 .wrapper {
   width: 100%;
 }
-.main_heading {
+.main-heading {
   font-family: 'Quattrocento Sans', sans-serif;
   text-transform: uppercase;
   color: #292f36;
@@ -69,10 +69,22 @@
   font-weight: 700;
   text-align: left;
 }
-.number-list {
+.main-heading:before {
+  content: '';
+  display: block;
+  float: left;
+  margin: 0 14px 0 0;
+  background: #e1e6ea;
+  width: 10px;
+  height: 35px;
+}
+.main-heading_inverse {
+  color: #fff;
+}
+.number-list-item {
   overflow: hidden;
 }
-.number-list__number {
+.number-list-item__number {
   background: #23b7a4;
   text-align: right;
   color: #fff;
@@ -81,10 +93,10 @@
   float: left;
   margin: 0 20px 0 0;
 }
-.number-list__heading {
+.number-list-item__heading {
   margin: 35px 0 0 0;
 }
-.number-list__text {
+.number-list-item__text {
   margin: 0 20px 0 0;
 font-family
   font-family: 'Open Sans';
@@ -153,8 +165,6 @@ font-family
   font-family: 'Quattrocento Sans', sans-serif;
 }
 .photo-social-buttons {
-  width: 100%;
-  text-align: center;
   display: none;
   position: absolute;
   top: 131px;
@@ -164,11 +174,40 @@ font-family
   width: 25%;
   float: left;
 }
-.staff-gallery__element:hover .photo-social-buttons {
+.staff-gallery__element:hover .social-buttons-gr {
   display: block;
+}
+.social-buttons-gr {
+  text-align: center;
+  display: none;
+  position: relative;
+  top: 131px;
+  background: #3a454d;
+  border: none;
+  cursor: pointer;
+  width: 152px;
+  height: 50px;
+  margin: 0 0 0 59px;
+}
+.social-buttons-gr__tw {
+  background: #3a454d;
+  width: 50px;
+  height: 50px;
+}
+.button-tw {
+  background: #3a454d;
+  width: 50px;
+  height: 50px;
+}
+.staff-photo__img {
+  width: 263px;
+  height: 300px;
 }
 .staff-photo__img:hover {
   opacity: 0.6;
+}
+.staff-photo__img:hover .social-buttons-gr {
+  display: block;
 }
 .staff-photo__name {
   background: #e1e6ea;
@@ -227,9 +266,6 @@ font-family
 .portfolio-img__photo:hover .portfolio-img__title {
   display: block;
 }
-.container1 {
-  background: #fff;
-}
 .map-wrapper {
   height: 346px;
   overflow: hidden;
@@ -255,6 +291,7 @@ body,
   overflow: hidden;
   position: relative;
   top: -100px;
+  margin: 0 411px 0 0;
 }
 .name {
   background: #eaeef1;
