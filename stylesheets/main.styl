@@ -104,15 +104,6 @@
   font-family
   font-family 'Open Sans'
 
-.grid-1
-  width 50%
-  float left
-  min-height 1px
-
-.grid-2
-  width 50%
-  float left
-
 .number-posetion-2
   margin 95px 803px 0 0
 
@@ -158,59 +149,50 @@
   background #3a454d
   padding 79px 0 0 0
 
-.photo-social-buttons
-  display none
-  position absolute
-  top 131px
-
 // Staff photo
 
-.staff-gallery__element
+.staff-photo
   position relative
-  width 25%
-  float left
-  &:hover
-    .social-buttons-gr
-      display block
-
-.social-buttons-gr
-  text-align center
-  display none
-  position relative
-  top 131px
-  background #3a454d
-  border none
-  cursor pointer
-  width 152px
-  height 50px
-  margin 0 0 0 59px
-
-.social-buttons-gr__tw
-  background #3a454d
-  width 50px
-  height 50px
-
-.button-tw
-  background #3a454d
-  width 50px
-  height 50px
 
 .staff-photo__img
   width 263px
   height 300px
   &:hover
     opacity 0.6
-    .social-buttons-gr
-      display block
+    .social-buttons-block
+      margin 0
+
+// Social buttons
+
+.social-buttons-block
+  overflow hidden
+  border none
+  cursor pointer
+  margin 125px 52px 125px 59px
+  position absolute
+  top 0
+
+.social-buttons-block__element
+  display block
+  float left
+  padding 17px
+  box-sizing border-box
+  background #3a454d
+  width 50px
+  height 50px
+  margin 0 1px 0 0
 
 
-.staff-photo__name
+.name-and-post
   background #e1e6ea
+
+.name-and-post__name
   color #292f36
   text-transform uppercase
+  width 263px
+  height 74px
 
-.staff-photo__post
-  background #e1e6ea
+.name-and-post__post
   color #8d8f92
 
 .photo-block__element
@@ -325,21 +307,61 @@ html, body, #map-canvas
   margin 0 8px
   overflow hidden
 
-.col-1
-  width 50%
+col()
   box-sizing border-box
   padding 8px
   min-height 1px
   float left
   position relative
 
+.col-1
+  width (100% / 12) * 1
+  col()
+
 .col-2
-  width 100%
-  box-sizing border-box
-  padding 8px
-  min-height 1px
-  position relative
-  float left
+  width (100% / 12) * 2
+  col()
+
+.col-3
+  width (100% / 12) * 3
+  col()
+
+.col-4
+  width (100% / 12) * 4
+  col()
+
+.col-5
+  width (100% / 12) * 5
+  col()
+
+.col-6
+  width (100% / 12) * 6
+  col()
+
+.col-7
+  width (100% / 12) * 7
+  col()
+
+.col-8
+  width (100% / 12) * 8
+  col()
+
+.col-9
+  width (100% / 12) * 9
+  col()
+
+.col-10
+  width (100% / 12) * 10
+  col()
+
+.col-11
+  width (100% / 12) * 11
+  col()
+
+.col-12
+  width (100% / 12) * 12
+  col()
+
 
 .send-message
   border-radius 3px

@@ -37,61 +37,66 @@ html
           button.button(href= "#") VIDEO TOUR
     .container
       h1.main-heading we are modest.
-      .grid-1
-        p.text-default Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor non, ornare sagittis dolor. Nulla vestibulu lacus sed molestie gravida. Crferm entum quismagna congue, vel sodales arcu vestibulum. Nunc lobortis dui magna, quis lacusullamcorper at.
-        p.text-default Phasellus sollicitudin ante eros ornare, sit amet luctus lorem semper. Suspendisse posuere, quamdictum consectetur, augue metus pharetra tellus, eu feugiatloreg egetnisi. Cras ornare bibendum ante, ut bibendum odio convallis eget. vel sodales arcu vestibulum
-        .social-buttons-group
-          button.button-facebook.social-buttons
-            img(src= '../img/icon-facebook.png')
-          button.button-twitter.social-buttons
-            img(src= '../img/icon-twitter.png')
-          button.button-google.social-buttons
-            img(src= '../img/icon-google.png')
-          button.button-dribbble.social-buttons
-            img(src= '../img/icon-dribbble.png')
-          button.button-behance.social-buttons
-            img(src= '../img/icon-behance.png')
-      .grid-2
-        .number-list
-          .number-list__item.number-list-item
-            .number-list-item__number 01
-            .number-list-item__heading Dedication to the customers
-            .number-list-item__text Integer vel lacus non dui ullamcorper venenatis. Aliquam vitae tristique nisi, vitae ullamcorper risus. Nam porttitor blandit ultricies.
-          .number-list__item
-            .number-list-item__number 02
-            .number-list-item__heading working closely with our clients
-            .number-list-item__text Sed blandit nisi urna, sed pellentesque enim consectetur vitae. Suspendisse ut vehicula nibh.
-          .number-list__item
-            .number-list-item__number 03
-            .number-list-item__heading increase happiness
-            .number-list-item__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend laoreet euismod.
-    .container
+      .row
+        .col-6
+          p.text-default Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor non, ornare sagittis dolor. Nulla vestibulu lacus sed molestie gravida. Crferm entum quismagna congue, vel sodales arcu vestibulum. Nunc lobortis dui magna, quis lacusullamcorper at.
+          p.text-default Phasellus sollicitudin ante eros ornare, sit amet luctus lorem semper. Suspendisse posuere, quamdictum consectetur, augue metus pharetra tellus, eu feugiatloreg egetnisi. Cras ornare bibendum ante, ut bibendum odio convallis eget. vel sodales arcu vestibulum
+          .social-buttons-group
+            button.button-facebook.social-buttons
+              img(src= '../img/icon-facebook.png')
+            button.button-twitter.social-buttons
+              img(src= '../img/icon-twitter.png')
+            button.button-google.social-buttons
+              img(src= '../img/icon-google.png')
+            button.button-dribbble.social-buttons
+              img(src= '../img/icon-dribbble.png')
+            button.button-behance.social-buttons
+              img(src= '../img/icon-behance.png')
+        .col-6
+          .number-list
+            .number-list__item.number-list-item
+              .number-list-item__number 01
+              .number-list-item__heading Dedication to the customers
+              .number-list-item__text Integer vel lacus non dui ullamcorper venenatis. Aliquam vitae tristique nisi, vitae ullamcorper risus. Nam porttitor blandit ultricies.
+            .number-list__item
+              .number-list-item__number 02
+              .number-list-item__heading working closely with our clients
+              .number-list-item__text Sed blandit nisi urna, sed pellentesque enim consectetur vitae. Suspendisse ut vehicula nibh.
+            .number-list__item
+              .number-list-item__number 03
+              .number-list-item__heading increase happiness
+              .number-list-item__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend laoreet euismod.
+      .container
       h1.main-heading MEET THE TEAM.
-      .staff-gallery
-        .staff-gallery__element.staff-photo
-          img.staff-photo__img(src= '../img/foto1.png')
-          //- TODO
-          .social-buttons-gr
-            button.social-buttons-gr__tw
-              img.button-tw(src= '../img/tw.png')
-            button.social-buttons-gr__f
-              img.button-tw(src= '../img/f.png')
-            button.social-buttons-gr__i
-              img.button-tw(src= '../img/i.png')
-          p.staff-photo__name gloria bromley
-          p.staff-photo__post CEO and Founder
-        .staff-gallery__element.staff-photo
-          img.staff-photo__img(src= '../img/foto2.png')
-          p.staff-photo__name paul torres
-          p.staff-photo__post Head of Development
-        .staff-gallery__element.staff-photo
-          img.staff-photo__img(src= '../img/foto3.png')
-          p.staff-photo__name judith gillette
-          p.staff-photo__post Graphic Desinger
-        .staff-gallery__element.staff-photo
-          img.staff-photo__img(src= '../img/foto4.png')
-          p.staff-photo__name deloris reed
-          p.staff-photo__post Client Service Director
+      .staff-gallery.row
+        .col-3
+          .staff-gallery__element.staff-photo
+            img.staff-photo__img(src= '../img/foto1.png')
+            .social-buttons-block
+              a.social-buttons-block__element.social-buttons-block__twitter(href= '#')
+                img.button-twitter(src= '../img/tw.png')
+              a.social-buttons-block__element.social-buttons-block__facebook(href= '#')
+                img.button-facebook(src= '../img/f.png')
+              a.social-buttons-block__element.social-buttons-block__linkedin(href= '#')
+                img.button-linkedin(src= '../img/i.png')
+            .name-and-post
+              p.name-and-post__name gloria bromley
+              p.name-and-post__post CEO and Founder
+        .col-3
+          .staff-gallery__element.staff-photo
+            img.staff-photo__img(src= '../img/foto2.png')
+            p.staff-photo__name paul torres
+            p.staff-photo__post Head of Development
+        .col-3
+          .staff-gallery__element.staff-photo
+            img.staff-photo__img(src= '../img/foto3.png')
+            p.staff-photo__name judith gillette
+            p.staff-photo__post Graphic Desinger
+        .col-3
+          .staff-gallery__element.staff-photo
+            img.staff-photo__img(src= '../img/foto4.png')
+            p.staff-photo__name deloris reed
+            p.staff-photo__post Client Service Director
     .wrapper
       .container
         h1.main-heading.main-heading_inverse lowely work
@@ -165,13 +170,13 @@ html
       p.paragraf2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique nec dolor non, ornare sagittis dolor. Nulla vestibulum lacus sed molestie gravida. Cras fermentum elit quis magna congue, vel sodales arcu vestibulum. Nunc lobortis dui magna, quis dapibus lacus
         .contact-form
           .row
-            .col-1
+            .col-6
               .contact-form__input
                 //- TODO
                 p.txt1 your name
                 //- TODO
                 input.name(type='text')
-            .col-1
+            .col-6
               .contact-form__input
                 p.txt2 yor email
                 input.email(type='text')
