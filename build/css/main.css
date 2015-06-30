@@ -154,15 +154,24 @@ font-family
 .staff-photo {
   position: relative;
 }
+.staff-photo:hover .social-buttons-block {
+  display: block;
+}
+.staff-photo:hover .name-and-post {
+  background: #3a454d;
+}
+.staff-photo:hover .name-and-post__name {
+  color: #fff;
+}
+.staff-photo:hover .name-and-post__post {
+  color: #fff;
+}
 .staff-photo__img {
   width: 263px;
   height: 300px;
 }
 .staff-photo__img:hover {
   opacity: 0.6;
-}
-.staff-photo__img:hover .social-buttons-block {
-  margin: 0;
 }
 .social-buttons-block {
   overflow: hidden;
@@ -171,6 +180,7 @@ font-family
   margin: 125px 52px 125px 59px;
   position: absolute;
   top: 0;
+  display: none;
 }
 .social-buttons-block__element {
   display: block;
@@ -183,16 +193,19 @@ font-family
   margin: 0 1px 0 0;
 }
 .name-and-post {
+  margin: -4px 0 0 0;
   background: #e1e6ea;
+  width: 263px;
+  height: 74px;
 }
 .name-and-post__name {
   color: #292f36;
   text-transform: uppercase;
-  width: 263px;
-  height: 74px;
+  padding: 21px 0 0 20px;
 }
 .name-and-post__post {
   color: #8d8f92;
+  padding: 9px 0 0 19px;
 }
 .photo-block__element {
   float: left;
@@ -271,12 +284,6 @@ body,
   position: relative;
   top: -100px;
   margin: 0 411px 0 0;
-}
-.name {
-  background: #eaeef1;
-  width: 100%;
-  margin: 7px 0 10px 0;
-  line-height: 44px;
 }
 .email {
   background: #eaeef1;
