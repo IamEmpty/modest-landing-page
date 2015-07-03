@@ -22,7 +22,7 @@ gulp.task('css', function () {
 
 gulp.task('watch', function() {
   gulp.watch('./*.jade', ['html']);
-  gulp.watch('./stylesheets/main.styl', ['css']);
+  gulp.watch(['./stylesheets/main.styl', './blocks/**/*.styl'], ['css']);
 });
 
 
