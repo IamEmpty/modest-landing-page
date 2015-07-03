@@ -1,51 +1,16 @@
+import '../blocks/menu/menu',
 * {
   margin: 0;
   padding: 0;
-}
-.container {
-  margin: 0 auto;
-  width: 1140px;
-  overflow: hidden;
 }
 .top-line {
   background: #000;
   overflow: hidden;
 }
-.menu {
-  padding: 20px;
-}
 .logotype {
   display: block;
   float: left;
-  margin: 30px 0 30px 0;
-}
-.menu__element {
-  float: right;
-  color: #fff;
-  padding: 0 10px;
-  text-decoration: none;
-text-transform
-}
-.menu__element_active {
-  color: #23b7a4;
-}
-.header {
-  padding: 50px;
-  background: url("../../img/pic.png") 50% 0;
-  padding: 225px 0 252px 0;
-}
-.header__element {
-  float: center;
-  font-size: 36px;
-  font-family: 'Quattrocento Sans', sans-serif;
-  color: #fff;
-}
-.header__text {
-  font-size: 16px;
-  font-family: 'Open Sans', 'sans-serif';
-  color: #fff;
-  width: 648px;
-  margin-bottom: 43px;
+  margin: 30px 0;
 }
 .button {
   display: inline-block;
@@ -87,26 +52,6 @@ text-transform
 .main-heading_inverse:before {
   background: #4e5a62;
 }
-.number-list-item {
-  overflow: hidden;
-}
-.number-list-item__number {
-  background: #23b7a4;
-  text-align: right;
-  color: #fff;
-  font-size: 20px;
-  padding: 16px 17px;
-  float: left;
-  margin: 0 20px 0 0;
-}
-.number-list-item__heading {
-  margin: 35px 0 0 0;
-}
-.number-list-item__text {
-  margin: 0 20px 0 0;
-font-family
-  font-family: 'Open Sans';
-}
 .number-posetion-2 {
   margin: 95px 803px 0 0;
 }
@@ -117,19 +62,6 @@ font-family
   font-family: 'Open Sans', 'sans-serif';
   color: #8d8f92;
   margin: 10px 0;
-}
-.social-buttons-group {
-  overflow: hidden;
-}
-.social-buttons {
-  margin: 0 1px 0 0;
-  width: 60px;
-  height: 60px;
-  float: left;
-  background: #c8cdd0;
-  cursor: pointer;
-  border: none;
-  display: block;
 }
 .border1 {
   float: left;
@@ -152,47 +84,6 @@ font-family
   background: #3a454d;
   padding: 79px 0 0 0;
 }
-.staff-photo {
-  position: relative;
-}
-.staff-photo:hover .social-buttons-block {
-  display: block;
-}
-.staff-photo:hover .name-and-post {
-  background: #3a454d;
-}
-.staff-photo:hover .name-and-post__name {
-  color: #fff;
-}
-.staff-photo:hover .name-and-post__post {
-  color: #fff;
-}
-.staff-photo__img {
-  width: 263px;
-  height: 300px;
-}
-.staff-photo__img:hover {
-  opacity: 0.6;
-}
-.social-buttons-block {
-  overflow: hidden;
-  border: none;
-  cursor: pointer;
-  margin: 125px 52px 125px 59px;
-  position: absolute;
-  top: 0;
-  display: none;
-}
-.social-buttons-block__element {
-  display: block;
-  float: left;
-  padding: 17px;
-  box-sizing: border-box;
-  background: #3a454d;
-  width: 50px;
-  height: 50px;
-  margin: 0 1px 0 0;
-}
 .name-and-post {
   margin: -4px 0 0 0;
   background: #e1e6ea;
@@ -212,31 +103,6 @@ font-family
   float: left;
   width: 33%;
 }
-.portfolio-img {
-  position: relative;
-}
-.portfolio-img:hover .portfolio-img__title {
-  display: block;
-}
-.portfolio-img__photo:hover {
-  opacity: 0.6;
-}
-.portfolio-img__photo:hover .portfolio-img__title {
-  display: block;
-}
-.portfolio-img__title {
-  width: 360px;
-  height: 60px;
-  text-align: center;
-  display: none;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background: #292f36;
-  padding: 20px 0 0 0;
-  box-sizing: border-box;
-  color: #fff;
-}
 .services-block__element {
   width: 25%;
   float: left;
@@ -250,12 +116,6 @@ font-family
   color: #8d8f92;
   text-align: center;
 }
-.portfolio-img__photo:hover {
-  opacity: 0.6;
-}
-.portfolio-img__photo:hover .portfolio-img__title {
-  display: block;
-}
 .map-wrapper {
   height: 346px;
   overflow: hidden;
@@ -267,15 +127,6 @@ body,
   margin: 0px;
   padding: 0px;
   width: 100%;
-}
-.button-show {
-  color: #fff;
-  font-size: 14px;
-  font-weight: 700;
-  background: transparent;
-  padding: 14px 20px;
-  border-radius: 3px;
-  margin: 77px 528px 79px 0;
 }
 .contact-form {
   background: #fff;
@@ -408,15 +259,6 @@ body,
   min-height: 1px;
   float: left;
   position: relative;
-}
-.send-message {
-  border-radius: 3px;
-  background-color: #23b7a4;
-  width: 147px;
-  height: 40px;
-  border: none;
-  cursor: pointer;
-  margin: 32px 0 0 0;
 }
 .txt4 {
   color: #fff;
