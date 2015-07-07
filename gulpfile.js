@@ -29,4 +29,3 @@ gulp.task('watch', function() {
 gulp.task('default', ['html', 'css', 'watch'], function() {
   // place code for your default task here
 });
-

@@ -344,6 +344,7 @@ body,
   margin: 30px 0;
 }
 .main-heading {
+  margin: 0 40px;
   overflow: hidden;
   display: block;
   font-family: 'Quattrocento Sans', sans-serif;
@@ -369,14 +370,22 @@ body,
   background: #4e5a62;
 }
 .menu {
-  padding: 20px;
+  padding: 33px 0 0 0;
 }
 .menu__element {
   float: right;
   color: #fff;
-  padding: 0 10px;
+  padding: 0 20px 0 20px;
   text-decoration: none;
-text-transform
+  text-transform: uppercase;
+  font-family: 'Open Sans', 'sans-serif';
+  font-size: 14px;
+}
+.menu__element:first-child {
+  padding: 0 0 0 20px;
+}
+.menu__element:last-child {
+  padding: 0 20px 0 0;
 }
 .menu__element_active {
   color: #23b7a4;
