@@ -1,7 +1,8 @@
 var gulp = require('gulp'),
   jade = require('gulp-jade'),
   plumber = require('gulp-plumber'),
-  stylus = require('gulp-stylus');
+  stylus = require('gulp-stylus'),
+  ghPages = require('gulp-gh-pages');
 
 
 gulp.task('html', function() {
@@ -25,6 +26,10 @@ gulp.task('watch', function() {
   gulp.watch(['./stylesheets/main.styl', './blocks/**/*.styl'], ['css']);
 });
 
+gulp.task('deploy', function() {
+  return gulp.src('./build/**/*')
+    .pipe(ghPages());
+});
 
 gulp.task('default', ['html', 'css', 'watch'], function() {
   // place code for your default task here
