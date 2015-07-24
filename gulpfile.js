@@ -21,6 +21,11 @@ gulp.task('css', function () {
     .pipe(gulp.dest('./build/css/'));
 });
 
+gulp.task('copy', function() {
+   return gulp.src('./img/*.{png,jpg}')
+   .pipe(gulp.dest('./build/img'));
+});
+
 gulp.task('watch', function() {
   gulp.watch('./*.jade', ['html']);
   gulp.watch(['./stylesheets/main.styl', './blocks/**/*.styl'], ['css']);
@@ -31,6 +36,6 @@ gulp.task('deploy', function() {
     .pipe(ghPages());
 });
 
-gulp.task('default', ['html', 'css', 'watch'], function() {
+gulp.task('default', ['html', 'copy', 'css', 'watch'], function() {
   // place code for your default task here
 });
