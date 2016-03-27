@@ -1,5 +1,5 @@
 var gulp = require('gulp'),
-  jade = require('gulp-jade'),
+  pug = require('gulp-pug'),
   plumber = require('gulp-plumber'),
   stylus = require('gulp-stylus'),
   ghPages = require('gulp-gh-pages');
@@ -8,7 +8,7 @@ var gulp = require('gulp'),
 gulp.task('html', function() {
   return gulp.src('./*.jade')
     .pipe(plumber())
-    .pipe(jade({
+    .pipe(pug({
       pretty: true
     }))
     .pipe(gulp.dest('./build/'))

@@ -17,12 +17,12 @@
   },
   "homepage": "https://github.com/global-citizen/modest-landing-page",
   "devDependencies": {
-    "gulp": "*",
+    "gulp": "^3.9.1",
     "gulp-gh-pages": "^0.5.2",
-    "gulp-jade": "^1.0.0",
     "gulp-plumber": "^1.0.0",
+    "gulp-pug": "^0.4.0",
     "gulp-stylus": "^2.0.1",
-    "jade": "^1.9.2",
-    "stylus": "^0.51.0"
+    "pug": "^2.0.0-alpha1",
+    "stylus": "^0.54.2"
   }
 }
