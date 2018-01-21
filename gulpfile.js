@@ -2,6 +2,7 @@ var gulp = require('gulp'),
   pug = require('gulp-pug'),
   plumber = require('gulp-plumber'),
   stylus = require('gulp-stylus');
+var sourcemaps = require('gulp-sourcemaps');
 var ghPages = require('gulp-gh-pages');
 
 
@@ -17,7 +18,9 @@ gulp.task('html', function() {
 gulp.task('css', function () {
   return gulp.src('./stylesheets/main.styl')
     .pipe(plumber())
+    .pipe(sourcemaps.init())
     .pipe(stylus())
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('./build/css/'));
 });
 
