@@ -1,8 +1,8 @@
 var gulp = require('gulp'),
   pug = require('gulp-pug'),
   plumber = require('gulp-plumber'),
-  stylus = require('gulp-stylus'),
-  ghPages = require('gulp-gh-pages');
+  stylus = require('gulp-stylus');
+var ghPages = require('gulp-gh-pages');
 
 
 gulp.task('html', function() {

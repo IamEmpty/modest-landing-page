@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "gulp",
+    "deploy": "gulp deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,9 +21,9 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-gh-pages": "^0.5.2",
-    "gulp-plumber": "^1.0.0",
-    "gulp-pug": "^0.4.0",
-    "gulp-stylus": "^2.0.1",
+    "gulp-plumber": "^1.2.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-stylus": "^2.7.0",
     "pug": "^2.0.0-alpha1",
     "stylus": "^0.54.2"
   }
