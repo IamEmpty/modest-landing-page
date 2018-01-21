@@ -1,7 +1,7 @@
 {
   "name": "modest-landing-page",
   "version": "1.0.0",
-  "description": "",
+  "description": "landing page",
   "main": "index.js",
   "scripts": {
     "start": "gulp",
@@ -10,23 +10,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/global-citizen/modest-landing-page.git"
+    "url": "git+https://github.com/global-citizen/modest-landing-page.git"
   },
   "author": "global-citizen",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/global-citizen/modest-landing-page/issues"
   },
   "homepage": "https://github.com/global-citizen/modest-landing-page",
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-gh-pages": "^0.5.2",
     "gulp-plumber": "^1.2.0",
     "gulp-pug": "^3.3.0",
     "gulp-sourcemaps": "^2.6.3",
-    "gulp-stylus": "^2.7.0",
-    "pug": "^2.0.0-alpha1",
-    "stylus": "^0.54.2"
+    "gulp-stylus": "^2.7.0"
   },
   "dependencies": {}
 }
