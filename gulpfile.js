@@ -1,7 +1,7 @@
-const gulp = require('gulp'),
-  pug = require('gulp-pug'),
-  plumber = require('gulp-plumber'),
-  stylus = require('gulp-stylus');
+const gulp = require('gulp');
+const pug = require('gulp-pug');
+const plumber = require('gulp-plumber');
+const stylus = require('gulp-stylus');
 const sourcemaps = require('gulp-sourcemaps');
 const ghPages = require('gulp-gh-pages');
 
@@ -30,7 +30,7 @@ function copy () {
 };
 
 function watch() {
-  gulp.watch('./*.jade', html);
+  gulp.watch('./*.pug', html);
   gulp.watch(['./stylesheets/main.styl', './blocks/**/*.styl'], css);
 };
 
