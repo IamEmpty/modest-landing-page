@@ -1,1 +1,6 @@
-# modest-landing-page
+# Modest landing page
+## Contribution
+```
+npm i
+npm start
+```
