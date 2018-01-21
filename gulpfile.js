@@ -3,11 +3,10 @@ const pug = require('gulp-pug');
 const plumber = require('gulp-plumber');
 const stylus = require('gulp-stylus');
 const sourcemaps = require('gulp-sourcemaps');
-const ghPages = require('gulp-gh-pages');
 
 
 function html () {
-  return gulp.src('./*.jade')
+  return gulp.src('./*.pug')
     .pipe(plumber())
     .pipe(pug({
       pretty: true
@@ -33,10 +32,5 @@ function watch() {
   gulp.watch('./*.pug', html);
   gulp.watch(['./stylesheets/main.styl', './blocks/**/*.styl'], css);
 };
-
-gulp.task('deploy', function() {
-  return gulp.src('./build/**/*')
-    .pipe(ghPages());
-});
 
 gulp.task('default', gulp.series(html, copy, css, watch));
